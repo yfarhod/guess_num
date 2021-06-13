@@ -32,6 +32,7 @@ const StartGameScreen = (props) => {
         setConfirmed(true);
         setSelectedNumber(chosenNumber);
         setEnteredValue('');
+        Keyboard.dismiss();
     };
 
     let confirmedOutput;
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
     },
     summaryContainer: {
         marginTop: 20,
-
+        alignItems: 'center'
     }
 });
 
